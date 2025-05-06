@@ -1,0 +1,22 @@
+1.1.6. Largest of three numbers
+Write a Python program to find the largest of three numbers.
+
+
+
+Note: Follow the input and output layout mentioned in the visible test cases.
+
+
+Sample Test Cases
+large.py
+a=float(input('Enter the first number: '))
+b=float(input('Enter the second number: '))
+c=float(input('Enter the third number: '))
+#largest=max(a,b,c)
+#print("Largest number: %.1f\n"%(largest))
+if a>=b and a>=c:
+	l=a#print("Largest number: %.1f\n"%(a))
+elif b>=a and b>=c:
+	l=b#print("Largest number: %.1f\n"%(b))
+elif c>=a and c>=b:
+	l=c#print("Largest number: %.1f\n"%(c))
+print("Largest number: %.1f\n"%(l))
