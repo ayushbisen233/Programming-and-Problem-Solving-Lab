@@ -1,0 +1,24 @@
+
+1.1.21. Program to find the sum of digits of a number
+
+Write a program to print the sum of digits of a number.
+
+For example: If the number is 1234, then the sum of digits, 1 + 2 + 3 + 4 = 10 should be printed.
+
+Sample Input and Output:
+num: 454545
+sum: 27
+
+Sample Test Cases
+
+Explorer
+
+Sumofdigs.py
+num=int(input('num: '))
+a=0
+while num>0:
+	d=num%10
+	a+=d
+	num=num//10
+
+print('sum:',a)
