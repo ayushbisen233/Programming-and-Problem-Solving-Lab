@@ -1,0 +1,28 @@
+1.1.5. Finding roots of quadratic equation
+Write a Python program to find the roots of a quadratic equation by taking the coefficients from the user.
+
+
+
+Note: Refer to the displayed test cases for input and output format.
+
+
+Sample Test Cases
+roots.py
+import math
+a=float(input("a: "))
+b=float(input("b: "))
+c=float(input("c: "))
+d=b*b-4*a*c
+if d>=0:
+	r1=(-b+math.sqrt(d))/(2*a)
+	r2=(-b-math.sqrt(d))/(2*a)
+	if d==0:
+		print("The root is: {:.2f}".format(r1))
+	else:
+		print("The roots are: {:.2f} and {:.2f}".format(r1,r2))
+
+
+else:
+	ri= -b/(2*a)
+	ib=math.sqrt(abs(d))/(2*a)
+	print("The roots are: {:.2f}+{:.2f}j and {:.2f}-{:.2f}j".format(ri,ib,ri,ib))
