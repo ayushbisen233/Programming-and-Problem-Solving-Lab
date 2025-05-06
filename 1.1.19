@@ -1,0 +1,15 @@
+1.1.19. Remove Punctuations
+
+Write a Python program that takes a sentence as input, removes punctuations from the sentence, and displays the modified sentence.
+
+
+Sample Test Cases
+
+Explorer
+
+punctuation.py
+import string
+a=input()
+p=string.punctuation
+m=''.join(c for c in a if c not in p)
+print(m)
