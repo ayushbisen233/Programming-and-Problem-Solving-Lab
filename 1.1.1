@@ -1,0 +1,21 @@
+Write a program to calculate the area of a circle and print the result as shown in the displayed test cases.
+
+
+
+Constraints:
+
+Radius is in between the range 0.0 to 100.0 both are inclusive
+Input is in the form of float.
+Follow the given instructions and write the code in the space provided.
+
+
+
+Note: Take the pi value as 3.14.
+AreaOfCircle.py
+pi=3.14
+r=int(input('Enter the radius : '))
+if 0.0<=r<=100:
+	area=float(pi*r**2)
+	print(f"Area of circle = {area:.6f}\n")
+else:
+	print("Enter a positive value upto 100\n")
