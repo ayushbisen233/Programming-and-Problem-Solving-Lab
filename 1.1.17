@@ -1,0 +1,32 @@
+
+1.1.17. Program to count the number of vowels in a given string using sets.
+
+Write a program to count the number of vowels using sets in a given string.
+
+
+
+Input Format:
+
+The program should prompt the user to enter the string.
+
+
+Output Format:
+
+The program should print the count of vowels present in the string.
+
+Sample Test Cases
+
+Explorer
+
+noofvowels.py
+def vowel_count(str):
+	count = 0
+	vowel = set("aeiouAEIOU")
+	for ch in str:
+		if ch in vowel:
+			count+=1
+	print(count)
+	# Write your code here to count the vowels
+	
+str = input()
+vowel_count(str)
