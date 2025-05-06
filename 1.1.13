@@ -1,0 +1,28 @@
+1.1.13. Print the following pattern
+13:57
+
+
+
+
+
+Write a Python program to print the following pattern.
+
+Sample Input and Output:
+Enter a number : 6
+* * * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+Sample Test Cases
+
+Explorer
+
+pattern2.py
+n=int(input('Enter a number : '))
+for i in range(n):
+	for j in range (n-i):
+		print('*',end=' ')
+	print()
