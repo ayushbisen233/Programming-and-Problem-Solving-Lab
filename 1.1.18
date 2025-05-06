@@ -1,0 +1,32 @@
+1.1.18. Palindrome checker
+
+Write a Python program to find whether a given string is a palindrome or not.
+
+
+
+Note: A palindrome is a string that reads the same backwards as forward.
+
+For example, "racecar" is a palindrome because it reads the same in both directions, while "hello" is not.
+
+
+
+Input Format:
+
+The input should be a string.
+
+
+Output Format:
+
+If the given string is a palindrome, print "palindrome".
+Otherwise, print "not a palindrome".
+
+Sample Test Cases
+
+Explorer
+
+palindrome.py
+s=input()
+if s==s[::-1]:
+	print('palindrome')
+else:
+	print('not a palindrome')
