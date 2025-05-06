@@ -1,0 +1,32 @@
+1.1.8. Program to perform union, intersection, and difference operations on sets.
+Write a Python program to perform union, intersection and difference operations on Set A and Set B.
+
+
+
+Input Format:
+
+Set A: The first input prompts for a space-separated list of integers for Set A.
+Set B: The second input prompts for a space-separated list of integers for Set B.
+
+
+Output Format:
+
+Union: The first line should display the union of both sets.
+Intersection: The second line should display the intersection of both sets.
+Difference: The third line should display the difference between Set A and Set B.
+
+
+Note:
+
+Please refer to the visible test cases for better understanding.
+
+Sample Test Cases
+
+setoperations.py
+a = list(map(int,input("Set A: ").split()))
+A = set(a)
+b = list(map(int,input("Set B: ").split()))
+B = set(b)
+print("Union: ",A|B)
+print("Intersection: ",A&B)
+print("Difference: ",A-B)
